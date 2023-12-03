@@ -1,5 +1,14 @@
 # DE-ID-AI-CUP-Trainer
 2023年AI CUP**隱私保護與醫學數據標準化競賽：解碼臨床病例、讓數據說故事**專用程式碼
+## 注意
+注意該資料集因DUA協議，無法上傳至公開網站中，請自行替換以下路徑中的檔案
+```
+answer/train_ansewer.txt
+answer/valid_ansewer.txt
+dataset/train_data
+dataset/valid_data
+dataset/test_data
+```
 
 ## 環境
 * 作業系統：Windows 11

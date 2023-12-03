@@ -1,0 +1,6 @@
+According to HIPAA rules, the following text needs to be de-identified, with special attention to COUNTRY (e.g., Australian, South Africa, USA), LOCATION-OTHER (e.g., PO BOX 28, "WEST POINT"), PHONE (e.g., 83829154 <- 8 numbers allowed, including spaces), and URL (http://.../ <-some URL format).
+
+
+
+
+
