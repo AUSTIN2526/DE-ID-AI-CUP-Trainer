@@ -18,7 +18,7 @@ dataset/test_data
 * CUDA版本：12.2
 
 ## 安裝函式庫
-* [CUDA(https://www.nvidia.com/zh-tw/geforce/technologies/cuda/)] 11.6 或以上版本
+* [CUDA 11.6](https://www.nvidia.com/zh-tw/geforce/technologies/cuda/) 或以上版本
 * [PyTorch 1.12](https://pytorch.org/) 或以上版本
 * [Flash Attention 2](https://github.com/Dao-AILab/flash-attention) (選用)
 
