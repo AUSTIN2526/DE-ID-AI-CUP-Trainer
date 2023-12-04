@@ -170,6 +170,8 @@ class TextInference:
             if prediction =='IDNUM' and target.find('.') != -1:
                 prediction = 'MEDICALRECORD'
                 corr ='(修正)'
+
+            ## 自行根據模型加入過濾守則
                 
             answer_format = f'{file_name}\t{prediction}\t{line_offset + start}\t{line_offset + end}\t{target}'
             print(answer_format, corr)
