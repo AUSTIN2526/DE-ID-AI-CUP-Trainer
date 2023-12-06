@@ -10,6 +10,13 @@ dataset/valid_data
 dataset/test_data
 ```
 
+有修正的訓練與驗證資料集
+```
+1481, 1139, 1059, 661, 830, 943 資料錯誤或不存在
+1071, 111, 583(多處), 834(多處) 索引值錯誤
+1906, 377, file20783 字元混亂
+```
+
 ## 環境
 * 作業系統：Windows 11
 * 程式語言：Python 3.8.10
@@ -79,6 +86,3 @@ python src/predict.py ^
 cd answer
 py filter.py
 ```
-
-
-
