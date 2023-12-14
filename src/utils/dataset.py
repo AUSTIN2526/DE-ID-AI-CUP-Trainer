@@ -2,7 +2,7 @@ from pathlib import Path
 from collections import defaultdict
 
 def open_file(path, readlines=False):
-    with open(path, 'r', encoding='utf-8') as file:
+    with open(path, 'r', encoding='utf-8-sig') as file:
         if readlines:
             return file.readlines()
         return file.read()
