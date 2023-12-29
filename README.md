@@ -16,7 +16,31 @@ dataset/test_data
 1071, 111, 583(多處), 834(多處) 索引值錯誤
 1906, 377, file20783 字元混亂
 ```
+## 資料格式
+訓練與驗證用的answer.txt格式為
+```
+file_name    PHI    start_idx   end_idx   target_text (中間用\t分割)
+                        .
+                        .
+file_name    PHI    start_idx   end_idx   target_text
+```
 
+dataset資料夾的內容為
+```
+  |-train_data
+  |    |-9.txt
+  |    |-10.txt
+  |       .
+  |       .
+  |    |-file233771.txt
+  |
+  |-valid_data
+  |     |-24.txt
+  |     |-47.txt
+  |        .
+  |        .
+  |     |-file30810.txt
+```
 ## 環境
 * 作業系統：Windows 11
 * 程式語言：Python 3.8.10
@@ -67,7 +91,7 @@ python src/train.py ^
 * 推理去識別化
 ```
 python src/predict.py ^
---adapter_name "Qwen-14B_4" ^
+--adapter_name "Qwen-14B_9" ^
 --prompt_path "./prompt/De-ID.txt" ^
 --data_type "De-ID" ^
 --windows_size 1
@@ -75,7 +99,7 @@ python src/predict.py ^
 * 推理時間正規化
 ```
 python src/predict.py ^
---adapter_name "Time-Qwen-7B_4" ^
+--adapter_name "Time-Qwen-7B_9" ^
 --prompt_path "./prompt/Time.txt" ^
 --data_type "Time" ^
 --windows_size 3
@@ -86,3 +110,8 @@ python src/predict.py ^
 cd answer
 py filter.py
 ```
+## 比賽排名
+(之後在更新)
+
+## 參賽後記
+(之後在更新)
