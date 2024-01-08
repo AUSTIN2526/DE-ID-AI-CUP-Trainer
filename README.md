@@ -1,14 +1,13 @@
 # DE-ID-AI-CUP-Trainer
-2023年AI CUP**隱私保護與醫學數據標準化競賽：解碼臨床病例、讓數據說故事**專用程式碼
+2023 AI CUP **隱私保護與醫學數據標準化競賽：解碼臨床病例、讓數據說故事** dedicated code
 
-## 比賽排名
+## Competition Ranking
 * **Private Leaderboard Rank:** 2
 * **Task 1 Score:** 0.9075701 
 * **Task 2 Score:** 0.8124762 
 
-
-## 注意
-注意該資料集因DUA協議，無法上傳至公開網站中，請自行替換以下路徑中的檔案
+## Note
+Due to the DUA agreement, the dataset cannot be uploaded to public websites. Please replace the files in the following paths on your own:
 ```
 answer/train_ansewer.txt
 answer/valid_ansewer.txt
@@ -17,22 +16,23 @@ dataset/valid_data
 dataset/test_data
 ```
 
-有修正的訓練與驗證資料集
+Modified training and validation datasets:
 ```
-1481, 1139, 1059, 661, 830, 943 資料錯誤或不存在
-1071, 111, 583(多處), 834(多處) 索引值錯誤
-1906, 377, file20783 字元混亂
+1481, 1139, 1059, 661, 830, 943 Data errors or do not exist
+1071, 111, 583 (multiple), 834 (multiple) Index errors
+1906, 377, file20783 Character confusion
 ```
-## 資料格式
-訓練與驗證用的answer.txt格式為
+
+## Data Format
+The format for the training and validation `answer.txt` is as follows:
 ```
-file_name    PHI    start_idx   end_idx   target_text (中間用\t分割)
+file_name    PHI    start_idx   end_idx   target_text (separated by tabs)
                         .
                         .
 file_name    PHI    start_idx   end_idx   target_text
 ```
 
-dataset資料夾的內容為
+The content of the `dataset` folder is structured as:
 ```
   |-train_data
   |    |-9.txt
@@ -48,27 +48,29 @@ dataset資料夾的內容為
   |        .
   |     |-file30810.txt
 ```
-## 環境
-* 作業系統：Windows 11
-* 程式語言：Python 3.8.10
-* CPU規格：Intel(R) Core(TM) i9-10900 CPU 2.80GHz
-* GPU規格：ASUS TURBO RTX 3090 TURBO-RTX3090-24G
-* CUDA版本：12.2
 
-## 安裝函式庫
-* [CUDA 11.6](https://www.nvidia.com/zh-tw/geforce/technologies/cuda/) 或以上版本
-* [PyTorch 1.12](https://pytorch.org/) 或以上版本
-* [Flash Attention 2](https://github.com/Dao-AILab/flash-attention) (選用)
+## Environment
+* Operating System: Windows 11
+* Programming Language: Python 3.8.10
+* CPU Specifications: Intel(R) Core(TM) i9-10900 CPU 2.80GHz
+* GPU Specifications: ASUS TURBO RTX 3090 TURBO-RTX3090-24G
+* CUDA Version: 12.2
 
-以上環境安裝完畢後執行
+## Library Installation
+* [CUDA 11.6](https://www.nvidia.com/zh-tw/geforce/technologies/cuda/) or later
+* [PyTorch 1.12](https://pytorch.org/) or later
+* [Flash Attention 2](https://github.com/Dao-AILab/flash-attention) (optional)
+
+After installing the above environment, execute the following command:
 ```
 pip install -r requirements
 ```
 
-## 使用說明
-該程式主要分為以下三個部分第一部分為訓練程式碼、第二部分為推理程式碼、第三階段則為過濾器程式碼
-1. ### 訓練參數設定
-* 訓練去識別化
+## Usage Instructions
+The program is mainly divided into three parts: training code, inference code, and filter code.
+
+1. ### Training Parameter Configuration
+* Train de-identification:
 ```
 python src/train.py ^
 --prompt_path "./prompt/De-ID.txt" ^
@@ -81,7 +83,7 @@ python src/train.py ^
 --split_ratio 0.8 ^
 --warmup_ratio 0.2
 ```
-* 訓練時間正規化
+* Train time normalization:
 ```
 python src/train.py ^
 --prompt_path "./prompt/Time.txt" ^
@@ -94,8 +96,9 @@ python src/train.py ^
 --split_ratio 0.8 ^
 --warmup_ratio 0.2
 ```
-2. ### 推理參數設定
-* 推理去識別化
+
+2. ### Inference Parameter Configuration
+* Inference de-identification:
 ```
 python src/predict.py ^
 --adapter_name "Qwen-14B_9" ^
@@ -103,7 +106,7 @@ python src/predict.py ^
 --data_type "De-ID" ^
 --windows_size 1
 ```
-* 推理時間正規化
+* Inference time normalization:
 ```
 python src/predict.py ^
 --adapter_name "Time-Qwen-7B_9" ^
@@ -111,8 +114,9 @@ python src/predict.py ^
 --data_type "Time" ^
 --windows_size 3
 ```
-3. ### 過濾時間正規化資料
-* 執行以下兩個步驟 (此步驟請先再推理去識別化前完成)
+
+3. ### Filter Time-Normalized Data
+* Execute the following two steps (complete this step before inference de-identification):
 ```
 cd answer
 py filter.py
