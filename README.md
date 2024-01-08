@@ -1,5 +1,12 @@
 # DE-ID-AI-CUP-Trainer
 2023年AI CUP**隱私保護與醫學數據標準化競賽：解碼臨床病例、讓數據說故事**專用程式碼
+
+## 比賽排名
+* **Private Leaderboard Rank:** 2
+* **Task 1 Score:** 0.9075701 
+* **Task 2 Score:** 0.8124762 
+
+
 ## 注意
 注意該資料集因DUA協議，無法上傳至公開網站中，請自行替換以下路徑中的檔案
 ```
@@ -110,8 +117,3 @@ python src/predict.py ^
 cd answer
 py filter.py
 ```
-## 比賽排名
-(之後在更新)
-
-## 參賽後記
-(之後在更新)
