@@ -121,8 +121,7 @@ python src/predict.py ^
 cd answer
 py filter.py
 ```
-## Team Members & Result
+## Team Members & Announcement
 * Team Members (I'm Team Leader)
 ![https://github.com/AUSTIN2526/DE-ID-AI-CUP-Trainer/blob/main/team_3951.png](https://github.com/AUSTIN2526/DE-ID-AI-CUP-Trainer/blob/main/team_3951.png)
-* Result (waiting for certificate of merit)  
-AI CUP Announcement :[Link](https://www.aicup.tw/post/%E3%80%90%E5%BE%97%E7%8D%8E%E5%90%8D%E5%96%AE%E3%80%91ai-cup-2023-%E7%A7%8B%E5%AD%A3%E8%B3%BD-%E3%80%8C%E9%9A%B1%E7%A7%81%E4%BF%9D%E8%AD%B7%E8%88%87%E9%86%AB%E5%AD%B8%E6%95%B8%E6%93%9A%E6%A8%99%E6%BA%96%E5%8C%96%E7%AB%B6%E8%B3%BD%EF%BC%9A%E8%A7%A3%E7%A2%BC%E8%87%A8%E5%BA%8A%E7%97%85%E4%BE%8B%E3%80%81%E8%AE%93%E6%95%B8%E6%93%9A%E8%AA%AA%E6%95%85%E4%BA%8B%E3%80%8D)
+Announcement: [Link](https://www.aicup.tw/post/%E3%80%90%E5%BE%97%E7%8D%8E%E5%90%8D%E5%96%AE%E3%80%91ai-cup-2023-%E7%A7%8B%E5%AD%A3%E8%B3%BD-%E3%80%8C%E9%9A%B1%E7%A7%81%E4%BF%9D%E8%AD%B7%E8%88%87%E9%86%AB%E5%AD%B8%E6%95%B8%E6%93%9A%E6%A8%99%E6%BA%96%E5%8C%96%E7%AB%B6%E8%B3%BD%EF%BC%9A%E8%A7%A3%E7%A2%BC%E8%87%A8%E5%BA%8A%E7%97%85%E4%BE%8B%E3%80%81%E8%AE%93%E6%95%B8%E6%93%9A%E8%AA%AA%E6%95%85%E4%BA%8B%E3%80%8D)
