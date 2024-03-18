@@ -1,6 +1,12 @@
 # DE-ID-AI-CUP-Trainer
 2023 AI CUP **隱私保護與醫學數據標準化競賽：解碼臨床病例、讓數據說故事** dedicated code
 
+## Conducting Technical Sharing at Academia Sinica
+In this competition, I independently developed a medical de-identification algorithm and stood out among 443 participants, achieving an excellent second place. It is worth mentioning that this technology was recognized as the best achievement in the field of deep learning in the competition. Inspired by its outstanding performance, the organizers subsequently invited me to publish this technology in an international journal, and I was also honored to be invited to the Academia Sinica to share this technology.
+
+![https://github.com/AUSTIN2526/DE-ID-AI-CUP-Trainer/blob/main/speech.jpg](https://github.com/AUSTIN2526/DE-ID-AI-CUP-Trainer/blob/main/speech.jpg)
+
+
 ## Competition Ranking
 * **Private Leaderboard Rank:** 2
 * **Task 1 Score:** 0.9075701 
@@ -121,6 +127,12 @@ python src/predict.py ^
 cd answer
 py filter.py
 ```
+
+## Certificate of Merit
+![https://github.com/AUSTIN2526/DE-ID-AI-CUP-Trainer/blob/main/award.jpg](https://github.com/AUSTIN2526/DE-ID-AI-CUP-Trainer/blob/main/award.jpg)
+
+
+
 ## Team Members & Announcement
 * Team Members (I'm Team Leader)
 ![https://github.com/AUSTIN2526/DE-ID-AI-CUP-Trainer/blob/main/team_3951.png](https://github.com/AUSTIN2526/DE-ID-AI-CUP-Trainer/blob/main/team_3951.png)
