@@ -1,0 +1,11 @@
+transformers==4.34.0
+peft
+sentencepiece
+accelerate
+loralib 
+jmespath
+scikit-learn
+matplotlib
+tiktoken
+transformers_stream_generator 
+einops

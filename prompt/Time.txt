@@ -1,0 +1,2 @@
+According to the ISO 8601 format, normalize the following text, paying special attention to "DURATION," which indicates a certain period. For example, in the phrase "Low-grade appendix tumor 10 years ago," the "10 years" represents a duration, and its normalized form is "P10Y" (P + time + years/months/days), denoting that it occurred 10 years ago. Also, pay attention to "SET" (e.g., once a day for 3 days | R3P1D, Twice | R2, twice every day | R2PT12H).
+
